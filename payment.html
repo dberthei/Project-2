@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Project 2</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-    <script async src="js/script.js"></script>
+    <title>ISUD Payment</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+	<link rel="stylesheet" media="screen" href="css/reset.css" />
+	<link rel="stylesheet" media="screen" href="css/style_payment.css" />
+	<script async src="js/script_payment.js"></script>
   </head>
   <body>
     <header>
@@ -25,8 +27,8 @@
       </nav>
     </header>
     <form method="GET" action = "#null" autocomplete="on" id="myForm2">
-    <div id ="container">
-      <fieldset>
+      <div id ="container">
+        <fieldset>
         <legend>Payment Method</legend>
         <div>
           <input type="radio" name="type_field" value=""><label>Credit Card</label>
@@ -46,43 +48,42 @@
         <div>
           <input type="radio" name="type_field" value=""><label>Paypal</label>
         </div>
-      </fieldset>
-    </div>
-    </form>
-    <form method="GET" action = "#null" autocomplete="on" id="myForm3">
-      <div id ="container2">
-        <fieldset>
-          <legend>Billing Information</legend>
-          <div>
-            <input type="text" name="address1_field" placeholder="Address 1">
-          </div>
-          <div>
-            <input type="text" name="address2_field" placeholder="Address 2">
-          </div>
-          <div>
-            <input type="text" name="city_field" placeholder="City">
-          </div>
-          <div>
-            <input type="text" name="state_field" placeholder="State">
-          </div>
-          <div>
-            <input type="text" name="country_field" placeholder="Country">
-          </div>
-          <div>
-            <input type="text" name="zip_field" placeholder="ZIP/Postal Code">
-          </div>
-          <div>
-            <input type="tel" name="phone_field" placeholder="Phone">
-          </div>
         </fieldset>
       </div>
-    </form>
-    <div class="button">
-      <input type="submit" id="submit" value="Submit">
-      <input type="reset" id="reset" value="Reset">
-      <a href="signup.html" class="previous">&laquo; Previous</a>
+  </form>
+  <form method="GET" action = "#null" autocomplete="on" id="myForm3">
+    <div id ="container2">
+      <fieldset>
+        <legend>Billing Information</legend>
+        <div>
+          <input type="text" name="address1_field" placeholder="Address 1">
+        </div>
+        <div>
+          <input type="text" name="address2_field" placeholder="Address 2">
+        </div>
+        <div>
+          <input type="text" name="city_field" placeholder="City">
+        </div>
+        <div>
+          <input type="text" name="state_field" placeholder="State">
+        </div>
+        <div>
+          <input type="text" name="country_field" placeholder="Country">
+        </div>
+        <div>
+          <input type="text" name="zip_field" placeholder="ZIP/Postal Code">
+        </div>
+        <div>
+          <input type="tel" name="phone_field" placeholder="Phone">
+        </div>
+      </fieldset>
     </div>
-    <footer id="footer">
+  </form>
+  <div class="button">
+	  <input type="submit" id="submit" value="Submit">
+	  <a href="signup.html" class="previous">&laquo; Previous</a>
+	</div>
+	<footer id="footer">
       <p>&#169; 2020 Git Avengers. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
     </footer>
   </body>
