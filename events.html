@@ -38,5 +38,24 @@
     <p>1991 - 3rd International Symposium in St. Catherine’s, Canada (ISU)</p>
     <p>1990 - 2nd International Symposium in Berlin, Germany (ISU)</p>
     <p>1989 1st International Symposium in Warsaw, Poland (ISU)</p>
+    <div id="map"></div>
+    <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of the Grant Park
+      var grantpark = {lat: 41.8722, lng: -87.6188};
+      // The map, centered at the Grant Park
+      var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 14, center: grantpark});
+      // The marker, positioned at the Grant Park
+      var marker = new google.maps.Marker({position: grantpark, map: map});
+    }
+    </script>
+    <script async defer 
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWShUUh_up2ux3aBJHdYcwKAHyZaHbyII&callback=initMap">
+    </script>
+    <footer id="footer">
+      <p>&#169; 2020 Git Avengers. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
+    </footer>
   </body>
 </html>
