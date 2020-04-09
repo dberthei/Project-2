@@ -116,3 +116,19 @@ h1, h2, h3 {
 p {
   text-align: left;
 }
+
+#map_wrap {
+  width: 90%;
+  height: 75%;
+  border-radius: 3em;
+  border: 3px solid black;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
