@@ -74,7 +74,7 @@ function init() {
       },
       map: myMap,
       animation: google.maps.Animation.DROP,
-      icon: 'assets/media/laughing.png',
+      icon: 'laughing.png',
       title: local[0],
       zIndex: local[3]
     });
