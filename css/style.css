@@ -136,6 +136,8 @@ p {
 .accordion {
   background-color: #007DCC;
   color: #FFFFFF;
+  border-radius: 3em;
+  border: 3px solid black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
