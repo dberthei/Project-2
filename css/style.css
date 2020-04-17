@@ -164,3 +164,57 @@ p {
   background-color: white;
   overflow: hidden;
 }
+
+#container {
+	text-align: center;
+	margin: auto;
+}
+
+#container2 {
+	text-align: center;
+	margin: 25px auto;
+}
+
+legend {
+	font-family: "Times New Roman", Times, serif;
+	color: #000000;
+	font-size: 30px;
+	margin: 10px auto;
+	}
+	
+label {
+	display: block;
+	text-align: center;
+	margin: 10px auto;
+	font-size: 1.3em;
+	color: #000000;
+}
+
+input { 
+    display: block;
+	width: 100%;
+	padding: 12px 20px;
+    margin: 10px auto;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+.button .previous .next {
+    width: 100%;
+	padding: 12px 20px;
+    margin: auto;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 768px) {			
+	input {
+		width: 20%
+	}
+	
+	#button {
+		width: 80%;
+	}
+}
