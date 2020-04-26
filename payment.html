@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
     <title>ISUD Payment</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-	<link rel="stylesheet" media="screen" href="css/reset.css" />
-	<link rel="stylesheet" media="screen" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+    <link rel="stylesheet" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" media="screen" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
-	<script async src="js/script.js"></script>
+    <script async src="js/script.js"></script>
   </head>
   <body>
     <header id="header">
@@ -28,55 +28,55 @@
       </nav>
     </header>
     <form method="GET" action = "#null" autocomplete="on" id="myForm2">
-      <div id ="container">
+      <div id ="container_payment">
         <fieldset>
-        <legend>Payment Method</legend>
-        <div>
-          <input type="radio" name="type_field" value=""><label>Credit Card</label>
-        </div>
-        <div>
-          <input type="number" name="cnumber_field" placeholder="Enter Card Number">
-        </div>
-        <div>
-          <input type="text" name="cname_field" placeholder="Enter Name On Card">
-        </div>
-        <div>
-          <input type="month" name="mmyy_field">
-        </div>
-        <div>
-          <input type="text" name="cvv_field" placeholder="CVV">
-        </div>
-        <div>
-          <input type="radio" name="type_field" value=""><label>Paypal</label>
-        </div>
+          <legend><h2>Payment Method</h2></legend>
+          <div>
+            <input type="radio" name="type_field" value=""><label>Credit Card</label>
+          </div>
+          <div>
+            <input type="number" name="cnumber_field" placeholder="Enter Card Number">
+          </div>
+          <div>
+            <input type="text" name="cname_field" placeholder="Enter Name On Card">
+          </div>
+          <div>
+            <input type="month" name="mmyy_field">
+          </div>
+          <div>
+            <input type="text" name="cvv_field" placeholder="CVV">
+          </div>
+          <div>
+            <input type="radio" name="type_field" value=""><label>Paypal</label>
+          </div>
         </fieldset>
       </div>
-	</form>
-	<form method="GET" action = "#null" autocomplete="on" id="myForm3">
-	  <div id ="container2">
+    </form>
+    <form method="GET" action = "#null" autocomplete="on" id="myForm3">
+      <div id ="container_billing">
         <fieldset>
-        <legend>Billing Information</legend>
-        <div>
-          <input type="text" name="address1_field" placeholder="Address 1">
-        </div>
-        <div>
-          <input type="text" name="address2_field" placeholder="Address 2">
-        </div>
-        <div>
-          <input type="text" name="city_field" placeholder="City">
-        </div>
-        <div>
-          <input type="text" name="state_field" placeholder="State">
-        </div>
-        <div>
-          <input type="text" name="country_field" placeholder="Country">
-        </div>
-        <div>
-          <input type="text" name="zip_field" placeholder="ZIP/Postal Code">
-        </div>
-        <div>
-          <input type="tel" name="phone_field" placeholder="Phone">
-        </div>
+          <legend><h2>Billing Information</h2></legend>
+          <div>
+            <input type="text" name="address1_field" placeholder="Address 1">
+          </div>
+          <div>
+            <input type="text" name="address2_field" placeholder="Address 2">
+          </div>
+          <div>
+            <input type="text" name="city_field" placeholder="City">
+          </div>
+          <div>
+            <input type="text" name="state_field" placeholder="State">
+          </div>
+          <div>
+            <input type="text" name="country_field" placeholder="Country">
+          </div>
+          <div>
+            <input type="text" name="zip_field" placeholder="ZIP/Postal Code">
+          </div>
+          <div>
+            <input type="tel" name="phone_field" placeholder="Phone">
+          </div>
         </fieldset>
       </div>
     </form>
@@ -84,7 +84,42 @@
       <input type="submit" id="submit" value="Submit">
     </div>
     <footer id="footer">
-      <p>&#169; 2020 Git Avengers. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
+      <div class="container_social_links">
+        <h2>Follow US</h2>
+        <ul class="social_links">
+          <li class="link_item">
+            <a href="https://www.facebook.com/illinoistech" title="facebook">
+              <img src="img/facebook_64px.png" alt="facebook"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.youtube.com/user/IITToday" title="youtube">
+              <img src="img/youtube_64px.png" alt="youtube"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://twitter.com/illinoistech" title="twitter">
+              <img src="img/twitter_64px.png" alt="twitter"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.linkedin.com/school/illinois-institute-of-technology/" title="linkedin">
+               <img src="img/linkedin_64px.png" alt="linkedin"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.instagram.com/illinoistech/" title="instagram">
+              <img src="img/instagram_64px.png" alt="instagram"/>
+            </a>
+          </li>
+        </ul>
+        <p>Icons made by<a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>from 
+          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+      </div>
+      <div class="copyright">
+        <p>&#169; 2020 <a href="https://3.basecamp.com/3649431/buckets/16154635/vaults/2569007867" title="Git Avengers Basecamp site">
+          Git Avengers.</a> | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
+      </div>
     </footer>
   </body>
 </html>
