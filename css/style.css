@@ -213,7 +213,7 @@ label {
 
 input {
   display: block;
-	width: 100%;
+  width: 100%;
   padding: 12px 20px;
   margin: 10px auto;
   border: 1px solid #ccc;
@@ -229,7 +229,7 @@ input {
   box-sizing: border-box;
 }
 
-/*a {
+a {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
@@ -238,7 +238,7 @@ input {
 a:hover {
   background-color: #ddd;
   color: black;
-}*/
+}
 
 #next {
   width: 7%;
@@ -304,19 +304,19 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  input {
-    width: 20%
-  }
+	input {
+		width: 50%
+	}
+	
+	#button {
+		width: 80%;
+	}
+		
+	.txtb label{
+		display: inline-block;
+		font-size: 1.3em;
+	}
+}
 }
 
-#button {
-  width: 80%;
-}
-
-@media screen and (min-width: 480px) {
-  label{
-    display: inline-block;
-    font-size: 1.3em;
-  }
-}
 
