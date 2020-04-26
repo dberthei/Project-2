@@ -23,8 +23,8 @@ body {
   height: 2.5rem;
 }
 
-#container_social_links p {
-	background-color: #241C15; /*Peppercorn*/
+#container_social_links h2 ul li p {
+  background-color: #241C15; /*Peppercorn*/
   color: #EFEEEA; /*Parnip*/
   text-align: center;
 }
