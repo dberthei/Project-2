@@ -18,8 +18,9 @@ body {
   font-family: 'DM Serif Display', serif;
 }
 
-.footer {
+#footer {
   background-color: #241C15; /*Peppercorn*/
+  color: #EFEEEA; /*Parnip*/
   /*background-color: #1C1F4C;*/
   width: 100%;
   height: 2.5rem;
@@ -49,7 +50,8 @@ body {
 
 #hero { 
   margin: 0;
-  color: #EDEBD9;
+  color: #EFEEEA; /*Parnip*/
+  /*color: #EDEBD9;*/
   font-family: 'DM Serif Display', serif;
   font-size: 60px;
   font-style: italic;
@@ -132,7 +134,7 @@ figure figcaption {
   padding: 5px 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
 }
 
@@ -182,12 +184,14 @@ p {
   overflow: hidden;
 }
 
+/*CSS rules for signup and payment pages*/
+
 #container {
   text-align: center;
   margin: auto;
 }
 
-#container2 {
+#container_billing {
   text-align: center;
   margin: 25px auto;
 }
@@ -225,7 +229,7 @@ input {
   box-sizing: border-box;
 }
 
-a {
+/*a {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
@@ -234,7 +238,7 @@ a {
 a:hover {
   background-color: #ddd;
   color: black;
-}
+}*/
 
 #next {
   width: 7%;
@@ -243,7 +247,8 @@ a:hover {
   border-radius: 6px;
 }
 
-/*styling for contact page and form*/
+/*CSS rules for contact page and form*/
+
 .contact-form {
   width: 50%;
   max-width: 400px;
