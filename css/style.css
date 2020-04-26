@@ -200,7 +200,15 @@ input {
 	box-sizing: border-box;
 }
 
-.button .previous .next {
+.submit {
+	width: 100%;
+	padding: 12px 20px;
+    margin: auto;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+.next {
 	width: 100%;
 	padding: 12px 20px;
     margin: auto;
