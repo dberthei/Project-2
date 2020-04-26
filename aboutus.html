@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>ISUD About Us</title>
-     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script async src="js/script.js"></script>
   </head>
   <body>
     <header id="header">
@@ -239,21 +240,5 @@
         <p>&#169; 2020 Git Avengers. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
       </div>
     </footer>
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
   </body>
 </html>
