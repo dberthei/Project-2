@@ -23,7 +23,14 @@ body {
   height: 2.5rem;
 }
 
-#container_social_links div h2 ul li p {
+#footer div h2 ul li p {
+  background-color: #241C15; /*Peppercorn*/
+  color: #EFEEEA; /*Parnip*/
+  /*background-color: #1C1F4C;*/
+  text-align: center;
+}
+
+#container_social_links {
   background-color: #241C15; /*Peppercorn*/
   color: #EFEEEA; /*Parnip*/
   text-align: center;
