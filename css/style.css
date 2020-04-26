@@ -216,6 +216,10 @@ input {
   list-style: none;
 }
 
+.link_item {
+  display: inline-block;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -228,81 +232,81 @@ a:hover {
 }
 
 #next {
-	width: 7%;
-	padding: 12px 20px;
-    margin: auto;
-	border-radius: 6px;
+  width: 7%;
+  padding: 12px 20px;
+  margin: auto;
+  border-radius: 6px;
 }
 
 /*styling for contact page and form*/
-.contact-form{
-  width:50%;
+.contact-form {
+  width: 50%;
   max-width: 400px;
   background: #FDFEFE;
   position: relative;
   margin: auto;
-  padding:20px 30px;
+  padding: 20px 30px;
   box-sizing: border-box;
   border-radius: 8px;
-  text-align:center;
+  text-align: center;
   box-shadow: 0 0 10px #000000b3; 
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.contact-form h1{
+.contact-form h1 {
   margin-top: 0;
   font-weight: 200;
 }
 
-.txtb{
-  border:1px solid gray;
-  margin:6px 0;
-  padding:12px 16px;
+.txtb {
+  border: 1px solid gray;
+  margin: 6px 0;
+  padding: 12px 16px;
   border-radius: 6px;
 }
 
-.txtb label{
-  display:block;
+.txtb label {
+  display: block;
   text-align: left;
-  color:#333;
-  text-transform:uppercase;
+  color: #333;
+  text-transform: uppercase;
   font-size: 12px;
 }
 
 .txtb input,.txtb textarea{
-  width:100%;
-  border:none;
-  background:#EDEBD9;
-  outline:none;
+  width: 100%;
+  border: none;
+  background: #EDEBD9;
+  outline: none;
   font-size: 10px;
   margin-top: 6px;
 }
 
 .btn{
-  display:inline-block;
+  display: inline-block;
   background: #007C89;
-  padding:12px 0;
-  color:white;
+  padding: 12px 0;
+  color: white;
   text-transform: uppercase;
-  cursor:pointer;
+  cursor: pointer;
   margin-top: 6px;
-  width:100%;
+  width: 100%;
 }
 
-@media only screen and (min-width: 768px) {			
-	input {
-		width: 20%
-	}
+@media only screen and (min-width: 768px) {
+  input {
+    width: 20%
+  }
 }
-	
-	#button {
-		width: 80%;
-	}
-  
+
+#button {
+  width: 80%;
+}
+
 @media screen and (min-width: 480px) {
- label{
-  display:inline-block;
-  font-size: 1.3em;
+  label{
+    display: inline-block;
+    font-size: 1.3em;
   }
 }
 
