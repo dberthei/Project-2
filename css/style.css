@@ -191,10 +191,10 @@ label {
 }
 
 input { 
-    display: block;
+  display: block;
 	width: 100%;
 	padding: 12px 20px;
-    margin: 10px auto;
+  margin: 10px auto;
 	border: 1px solid #ccc;
 	border-radius: 6px;
 	box-sizing: border-box;
@@ -277,6 +277,9 @@ input {
  label{
   display:inline-block;
   font-size: 1.3em;
+  }
+  .contact-form{
+
   }
 }
 
