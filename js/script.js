@@ -1,5 +1,5 @@
 /*
-Nam please add what your code does here.
+The code below warns the users if they forget to fill in the informaton
 */
 
 function init() {
