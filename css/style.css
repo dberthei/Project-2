@@ -207,7 +207,7 @@ label {
   display: block;
   text-align: center;
   margin: 10px auto;
-  font-size: 1.3em;
+  font-size: 12px;
   color: #000000;
 }
 
@@ -224,7 +224,7 @@ input {
 .button .previous .next {
   width: 100%;
   padding: 12px 20px;
-    margin: auto;
+  margin: auto;
   border-radius: 6px;
   box-sizing: border-box;
 }
@@ -302,7 +302,7 @@ a:hover {
 }
 
 .txtb input,.txtb textarea{
-  width: 50%;
+  width: 100%;
   border: none;
   background: #EDEBD9;
   outline: none;
