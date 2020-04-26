@@ -208,6 +208,14 @@ input {
 	box-sizing: border-box;
 }
 
+.container_social_links {
+  text-align: center;
+}
+
+.social_links {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -285,12 +293,12 @@ a:hover {
 	input {
 		width: 20%
 	}
+}
 	
 	#button {
 		width: 80%;
 	}
-}
-
+  
 @media screen and (min-width: 480px) {
  label{
   display:inline-block;
