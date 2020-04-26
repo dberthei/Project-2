@@ -176,11 +176,11 @@ p {
 }
 
 legend {
-	font-family: 'Playfair Display', serif;
 	color: #000000;
 	font-size: 30px;
 	margin: 10px auto;
-	}
+	font-family: 'Playfair Display', serif;
+}
 	
 label {
 	display: block;
@@ -191,19 +191,19 @@ label {
 }
 
 input { 
-  display: block;
+    display: block;
 	width: 100%;
 	padding: 12px 20px;
-  margin: 10px auto;
+    margin: 10px auto;
 	border: 1px solid #ccc;
 	border-radius: 6px;
 	box-sizing: border-box;
 }
 
 .button .previous .next {
-  width: 100%;
+	width: 100%;
 	padding: 12px 20px;
-  margin: auto;
+    margin: auto;
 	border-radius: 6px;
 	box-sizing: border-box;
 }
