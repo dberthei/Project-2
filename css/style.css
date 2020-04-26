@@ -48,6 +48,13 @@ p#container_social_links {
   display: inline-block;
 }
 
+/*restyling hyperlink*/
+.hyperlink_item {
+  color: #EFEEEA; /*Parnip*/
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
 #hero { 
   margin: 0;
   color: #EFEEEA; /*Parnip*/
