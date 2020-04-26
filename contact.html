@@ -26,28 +26,70 @@
         </div>
       </nav>
     </header>
-    <div class="contact-form">
-      <h3>Contact Us</h3>
-        <div class="txtb">
-          <label>Full Name: </label>
-          <input type="text"  placeholder="Enter Your Name">
-        </div>
-        <div class="txtb">
-          <label>Email: </label>
-          <input type="Email"  placeholder="Enter Your Email">
-        </div>
-        <div class="txtb">
-          <label>Phone Number: </label>
-          <input type="text" placeholder="Enter Your Phone Number">
-        </div>
-        <div class="txtb">
-          <label>Message: </label>
-          <textarea></textarea>
-        </div>
-        <a class="btn">Send</a>
+    <form method="GET" action = "#null" autocomplete="on" id="myForm2">
+      <div id ="container">
+      <!-- <div class="contact-form"> -->
+        <fieldset>
+          <legend><h2>Contact Us</h2></legend>
+          <!-- <h3>Contact Us</h3> -->
+          <div class="txtb">
+            <label>Full Name: </label>
+            <input type="text" placeholder="Enter Your Name">
+          </div>
+          <div class="txtb">
+            <label>Email: </label>
+            <input type="Email"  placeholder="Enter Your Email">
+          </div>
+          <div class="txtb">
+            <label>Phone Number: </label>
+            <input type="text" placeholder="Enter Your Phone Number">
+          </div>
+          <div class="txtb">
+            <label>Message: </label>
+            <textarea></textarea>
+          </div>
+          <div class="button">
+             <input type="submit" id="submit" value="Send">
+          </div>
+        </fieldset>
       </div>
-       <footer id="footer">
-        <p>&#169; 2020 Git Avengers. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
-      </footer>
-    </body>
-    </html>
+    </form>
+   <!-- FOOTER SECTION -->
+    <footer id="footer">
+      <div id="container_social_links">
+        <h2>Follow US</h2>
+        <ul class="social_links">
+          <li class="link_item">
+            <a href="https://www.facebook.com/illinoistech" title="facebook">
+              <img src="img/facebook_64px.png" alt="facebook"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.youtube.com/user/IITToday" title="youtube">
+              <img src="img/youtube_64px.png" alt="youtube"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://twitter.com/illinoistech" title="twitter">
+              <img src="img/twitter_64px.png" alt="twitter"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.linkedin.com/school/illinois-institute-of-technology/" title="linkedin">
+               <img src="img/linkedin_64px.png" alt="linkedin"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.instagram.com/illinoistech/" title="instagram">
+              <img src="img/instagram_64px.png" alt="instagram"/>
+            </a>
+          </li>
+        </ul>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from 
+          <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+        <p>&#169; 2020 <a href="https://3.basecamp.com/3649431/buckets/16154635/vaults/2569007867" title="Git Avengers Basecamp site">
+          Git Avengers</a>. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
+      </div>
+    </footer>
+  </body>
+</html>
