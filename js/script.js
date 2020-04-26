@@ -85,7 +85,7 @@ window.addEventListener('load', init);
 /*
 The code below displays collapsible content panels for presenting information in a limited amount of space.
 */
-function init() {
+function init2() {
   var acc = document.getElementsByClassName("accordion");
   var i;
 
@@ -101,5 +101,5 @@ function init() {
     });
   }
 }
-window.addEventListener('load', init);
+window.addEventListener('load', init2);
 
