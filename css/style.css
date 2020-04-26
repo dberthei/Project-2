@@ -230,14 +230,14 @@ input {
 }
 
 /*styling for contact page and form*/
-.contact-form{
+/*.contact-form{
   width:50%;
   display: block;
   text-align: center;
   margin: 10px auto;
   font-size: 1.3em;
   color: #000000;
-}
+}*/
 
 input {
   display: block;
