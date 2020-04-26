@@ -208,6 +208,13 @@ input {
 	box-sizing: border-box;
 }
 
+.container_social_links {
+  text-align: center;
+}
+
+.social_links {
+  list-style: none;
+}
 
 @media screen and (min-width: 768px) {			
 	input {
@@ -217,4 +224,6 @@ input {
 	#button {
 		width: 80%;
 	}
+	
+	
 }
