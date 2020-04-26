@@ -18,13 +18,16 @@ body {
   font-family: 'DM Serif Display', serif;
 }
 
-#footer {
+#footer div h2 ul li p {
   background-color: #241C15; /*Peppercorn*/
   color: #EFEEEA; /*Parnip*/
   /*background-color: #1C1F4C;*/
+  text-align: center;
+}
+
+#footer {
   width: 100%;
   height: 2.5rem;
-  text-align: center;
 }
 
 #container_social_links {
