@@ -30,7 +30,7 @@ body {
   text-align: center;
 }
 
-#container_social_links {
+#container_social_links p {
   background-color: #241C15; /*Peppercorn*/
   color: #EFEEEA; /*Parnip*/
   text-align: center;
