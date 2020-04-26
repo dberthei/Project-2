@@ -6,12 +6,13 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
 	<link rel="stylesheet" media="screen" href="css/reset.css" />
 	<link rel="stylesheet" media="screen" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
 	<script async src="js/script.js"></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="header">
-        <img src="img/ISUD_Logo_color.png" alt="logo"/>
+        <img src="img/logo.png" alt="logo"/>
         <h1 id="hero">The International Society for Universal Dialogue</h1>
       </div>
       <nav id="main-navbar">
@@ -50,10 +51,10 @@
         </div>
         </fieldset>
       </div>
-  </form>
-  <form method="GET" action = "#null" autocomplete="on" id="myForm3">
-    <div id ="container2">
-      <fieldset>
+	</form>
+	<form method="GET" action = "#null" autocomplete="on" id="myForm3">
+	  <div id ="container2">
+        <fieldset>
         <legend>Billing Information</legend>
         <div>
           <input type="text" name="address1_field" placeholder="Address 1">
@@ -76,14 +77,13 @@
         <div>
           <input type="tel" name="phone_field" placeholder="Phone">
         </div>
-      </fieldset>
+        </fieldset>
+      </div>
+    </form>
+    <div class="button">
+      <input type="submit" id="submit" value="Submit">
     </div>
-  </form>
-  <div class="button">
-	  <input type="submit" id="submit" value="Submit">
-	  <a href="signup.html" class="previous">&laquo; Previous</a>
-	</div>
-	<footer id="footer">
+    <footer id="footer">
       <p>&#169; 2020 Git Avengers. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
     </footer>
   </body>
