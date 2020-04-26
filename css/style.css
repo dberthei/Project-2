@@ -229,16 +229,6 @@ input {
   box-sizing: border-box;
 }
 
-/*styling for contact page and form*/
-/*.contact-form{
-  width:50%;
-  display: block;
-  text-align: center;
-  margin: 10px auto;
-  font-size: 1.3em;
-  color: #000000;
-}*/
-
 input {
   display: block;
   width: 100%;
@@ -312,7 +302,7 @@ a:hover {
 }
 
 .txtb input,.txtb textarea{
-  width: 100%;
+  width: 50%;
   border: none;
   background: #EDEBD9;
   outline: none;
@@ -333,7 +323,7 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
   input {
-    width: 30%
+    width: 20%
   }
   
   #submit {
