@@ -286,11 +286,5 @@ input {
   display:inline-block;
   font-size: 1.3em;
   }
-  #header{
-  max-width: 100% !important;
-  position:relative;
-  font-size: 1.3em;
-  }
-  }
 }
 
