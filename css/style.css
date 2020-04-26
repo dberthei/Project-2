@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   /*background-color: #EFEEEA; /*Parnip*/
   background-color: #EDEBD9;
-  font-family: sans-serif; 
+  font-family: 'Montserrat', sans-serif; 
   font-size: 16px;
 }
 
@@ -15,6 +15,7 @@ body {
 #header {
   /*background-color: #007C89; /*Kale*/
   background-color: #00848C;
+  font-family: 'DM Serif Display', serif;
 }
 
 #footer p {
@@ -116,8 +117,7 @@ figure figcaption {
 }
 
 h1, h2, h3 {
-  font-family: sans-serif;
-}
+  font-family: 'Playfair Display', serif;
 
 p {
   text-align: left;
