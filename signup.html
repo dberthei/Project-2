@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>ISUD Sign Up</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+    <link rel="stylesheet" media="screen" href="css/reset.css" />
     <link rel="stylesheet" media="screen" href="css/style.css" />
-    <link rel="stylesheet" media="screen" href="css/reset.css" /> 
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
-	<script async src="js/script.js"></script>
-    <title>ISUD Sigp Up</title> 
+    <script async src="js/script.js"></script>
   </head>
   <body>
     <header id="header">
@@ -30,30 +30,64 @@
     <form method="GET" action = "#null" autocomplete="on" id="myForm">
       <div id ="container">
         <fieldset>
-		<legend>Sign Up To Get The Latest News From The International Society for Universal Dialogue</legend>
-        <div>
-          <label>Organization Name<input type="text" name="orname_field" placeholder="Enter your organization name here"></label>
-        </div>
-        <div>
-          <label>First Name<input type="text" name="fname_field" placeholder="Enter your first name here"></label>
-        </div>
-        <div>
-          <label>Last Name<input type="text" name="lname_field" placeholder="Enter your last name here"></label>
-        </div>
-        <div>
-          <label>Title<input type="text" name="title_field" placeholder="Enter your title here"></label>
-        </div>
-        <div>
-          <label>Email<input type="email" name="email_field" placeholder="Enter your email here"></label>
-        </div>
+          <legend><h2>Sign Up To Get The Latest News From The International Society for Universal Dialogue</h2></legend>
+          <div>
+            <label>Organization Name<input type="text" name="orname_field" placeholder="Enter your organization name here"></label>
+          </div>
+          <div>
+            <label>First Name<input type="text" name="fname_field" placeholder="Enter your first name here"></label>
+          </div>
+          <div>
+            <label>Last Name<input type="text" name="lname_field" placeholder="Enter your last name here"></label>
+          </div>
+          <div>
+            <label>Title<input type="text" name="title_field" placeholder="Enter your title here"></label>
+          </div>
+          <div>
+            <label>Email<input type="email" name="email_field" placeholder="Enter your email here"></label>
+          </div>
         </fieldset>
-	    <div class="button">
-	      <a href="payment.html" class="next">Next &raquo;</a>
-	    </div>
+        <div class="button">
+          <a href="payment.html" id="next">Next &raquo;</a>
+        </div>
       </div>
     </form>
-	<footer id="footer">
-	  <p>&#169; 2020 Git Avengers. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
+    <!-- FOOTER SECTION -->
+    <footer id="footer">
+      <div id="container_social_links">
+        <h2>Follow US</h2>
+        <ul class="social_links">
+          <li class="link_item">
+            <a href="https://www.facebook.com/illinoistech" title="facebook">
+              <img src="img/facebook_64px.png" alt="facebook"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.youtube.com/user/IITToday" title="youtube">
+              <img src="img/youtube_64px.png" alt="youtube"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://twitter.com/illinoistech" title="twitter">
+              <img src="img/twitter_64px.png" alt="twitter"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.linkedin.com/school/illinois-institute-of-technology/" title="linkedin">
+               <img src="img/linkedin_64px.png" alt="linkedin"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.instagram.com/illinoistech/" title="instagram">
+              <img src="img/instagram_64px.png" alt="instagram"/>
+            </a>
+          </li>
+        </ul>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from 
+          <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+        <p>&#169; 2020 <a href="https://3.basecamp.com/3649431/buckets/16154635/vaults/2569007867" title="Git Avengers Basecamp site">
+          Git Avengers</a>. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
+      </div>
     </footer>
   </body>
 </html>
