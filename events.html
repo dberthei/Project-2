@@ -9,66 +9,103 @@
     <title>Events</title>
   </head>
   <body>
+    <!-- HEADER SECTION -->
     <header id="header">
       <div class="header">
         <img src="img/logo.png" alt="logo"/>
         <h1 id="hero">The International Society for Universal Dialogue</h1>
       </div>
       <nav id="main-navbar">
-      <div id="navbar-container">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li id="onpage"><a href="events.html">Events</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        <div id="navbar-container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li id="onpage"><a href="events.html">Events</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN SECTION -->
+    <main id="content">
+      <div>
+        <h2>PAST EVENTS (Starting from the most recent)</h2>
+        <p>2018 - 12th World Congress in Lima, Peru Theme: Philosophy in an Age of Crisis: Challenges and Prospects</p>
+        <p>2016 - 11th World Congress in Warsaw, Poland Theme: Values and Ideals: Theory and Praxis</p>
+        <p>2014 - 10th World Congress in Craiova, Romania Theme: The Human Being: Its Nature and Functions</p>
+        <p>2013 - ISUD Meeting during XXIII Congress of Philosophy, Athens, Greece</p>
+        <p>2012 - 9th World Congress in Olympia, Greece Theme: Democratic Culture: Historical Reflections and Modern Transformations</p>
+        <p>2010 - 8th World Congress in Beijing, China (ISUD) Theme: Dialogue among Cultures: Peace, Justice and Harmony</p>
+        <p>2007 - 7th World Congress in Hiroshima, Japan (ISUD) Theme: Collective Memory, Philosophical Reflection and World Peace</p>
+        <p>2005 - 6th World Congress in, Helsinki, Finland (ISUD) Theme: Humanity at the Turning Point: Rethinking Nature, Culture and Freedom</p>
+        <p>2003 - 5th World Congress in Olympia, Greece (ISUD) Theme: Religion, Politics and Suffering: Intercultural Dimensions and Challenges for Philosophy
+        <p>2001 - 4th World Congress in Krakow, Poland (ISUD) Theme: Mythos and Logos: How to Regain the Love of Wisdom</p>
+        <p>1998 - 3rd World Congress in Boston, USA (ISU)</p>
+        <p>1995 - 2nd World Congress in Orlando, USA (ISU)</p>
+        <p>1993 - 1st World Congress in Warsaw, Poland (ISU)</p>
+        <p>1993 - 4th International Symposium in London, Great Britain (ISU)</p>
+        <p>1991 - 3rd International Symposium in St. Catherine’s, Canada (ISU)</p>
+        <p>1990 - 2nd International Symposium in Berlin, Germany (ISU)</p>
+        <p>1989 - 1st International Symposium in Warsaw, Poland (ISU)</p>
       </div>
-    </nav>
-  </header>
-  <main id="content">
-    <div>
-      <h2>PAST EVENTS (Starting from the most recent)</h2>
-      <p>2018 - 12th World Congress in Lima, Peru Theme: Philosophy in an Age of Crisis: Challenges and Prospects</p>
-      <p>2016 - 11th World Congress in Warsaw, Poland Theme: Values and Ideals: Theory and Praxis</p>
-      <p>2014 - 10th World Congress in Craiova, Romania Theme: The Human Being: Its Nature and Functions</p>
-      <p>2013 - ISUD Meeting during XXIII Congress of Philosophy, Athens, Greece</p>
-      <p>2012 - 9th World Congress in Olympia, Greece Theme: Democratic Culture: Historical Reflections and Modern Transformations</p>
-      <p>2010 - 8th World Congress in Beijing, China (ISUD) Theme: Dialogue among Cultures: Peace, Justice and Harmony</p>
-      <p>2007 - 7th World Congress in Hiroshima, Japan (ISUD) Theme: Collective Memory, Philosophical Reflection and World Peace</p>
-      <p>2005 - 6th World Congress in, Helsinki, Finland (ISUD) Theme: Humanity at the Turning Point: Rethinking Nature, Culture and Freedom</p>
-      <p>2003 - 5th World Congress in Olympia, Greece (ISUD) Theme: Religion, Politics and Suffering: Intercultural Dimensions and Challenges for Philosophy
-      <p>2001 - 4th World Congress in Krakow, Poland (ISUD) Theme: Mythos and Logos: How to Regain the Love of Wisdom</p>
-      <p>1998 - 3rd World Congress in Boston, USA (ISU)</p>
-      <p>1995 - 2nd World Congress in Orlando, USA (ISU)</p>
-      <p>1993 - 1st World Congress in Warsaw, Poland (ISU)</p>
-      <p>1993 - 4th International Symposium in London, Great Britain (ISU)</p>
-      <p>1991 - 3rd International Symposium in St. Catherine’s, Canada (ISU)</p>
-      <p>1990 - 2nd International Symposium in Berlin, Germany (ISU)</p>
-      <p>1989 1st International Symposium in Warsaw, Poland (ISU)</p>
-    </div>
-    <div id="map_wrap">
-      <div id="map"></div>
-    </div>
-   
-    <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of the Grant Park
-      var grantpark = {lat: 41.8722, lng: -87.6188};
-      // The map, centered at the Grant Park
-      var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 14, center: grantpark});
-      // The marker, positioned at the Grant Park
-      var marker = new google.maps.Marker({position: grantpark, map: map});
-    }
-    </script>
-    <script async defer 
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA77g_yn1m1Od_5DX-M35wVkNMHE4nXUYI&callback=initMap">
-    </script>
-   </main>
-   <footer id="footer">
-     <p>&#169; 2020 Git Avengers. | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
-   </footer>
+      <div id="map_wrap">
+        <div id="map"></div>
+      </div>
+      <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of the Grant Park
+          var grantpark = {lat: 41.8722, lng: -87.6188};
+          // The map, centered at the Grant Park
+          var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 14, center: grantpark});
+          // The marker, positioned at the Grant Park
+          var marker = new google.maps.Marker({position: grantpark, map: map});
+        }
+      </script>
+      <script async defer 
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA77g_yn1m1Od_5DX-M35wVkNMHE4nXUYI&callback=initMap">
+      </script>
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer id="footer">
+      <div class="container_social_links">
+        <h2>Follow US</h2>
+        <ul class="social_links">
+          <li class="link_item">
+            <a href="https://www.facebook.com/illinoistech" title="facebook">
+              <img src="img/facebook_64px.png" alt="facebook"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.youtube.com/user/IITToday" title="youtube">
+              <img src="img/youtube_64px.png" alt="youtube"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://twitter.com/illinoistech" title="twitter">
+              <img src="img/twitter_64px.png" alt="twitter"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.linkedin.com/school/illinois-institute-of-technology/" title="linkedin">
+               <img src="img/linkedin_64px.png" alt="linkedin"/>
+            </a>
+          </li>
+          <li class="link_item">
+            <a href="https://www.instagram.com/illinoistech/" title="instagram">
+              <img src="img/instagram_64px.png" alt="instagram"/>
+            </a>
+          </li>
+        </ul>
+        <p>Icons made by<a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>from 
+          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+      </div>
+      <div class="copyright">
+        <p>&#169; 2020 <a href="https://3.basecamp.com/3649431/buckets/16154635/vaults/2569007867" title="Git Avengers Basecamp site">
+          Git Avengers.</a> | Project created for ITMD 362 Human-Computer Interaction and Web Design, Spring 2020.</p>
+      </div>
+    </footer>
   </body>
 </html>
