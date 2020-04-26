@@ -200,18 +200,20 @@ input {
 	box-sizing: border-box;
 }
 
-.submit {
-	width: 100%;
+#submit {
+	width: 20%;
 	padding: 12px 20px;
-    margin: auto;
+    margin: 10px auto;
 	border-radius: 6px;
 	box-sizing: border-box;
 }
 
-.next {
+#next {
+	display: inline-block;
 	width: 100%;
 	padding: 12px 20px;
     margin: auto;
+	color: black;
 	border-radius: 6px;
 	box-sizing: border-box;
 }
