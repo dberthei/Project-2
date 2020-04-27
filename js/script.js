@@ -93,7 +93,7 @@ function init() {
   
   function showImage(n) {
     var i;
-    var x = document.getElementsByClassName("slider_image");
+    var x = document.getElementsByClassName("image_container");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
