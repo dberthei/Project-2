@@ -340,9 +340,4 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 480px) {
- label{
-  display:inline-block;
-  font-size: 1.3em;
-  }
-}
+
