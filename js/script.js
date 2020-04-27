@@ -83,7 +83,7 @@ function init() {
 window.addEventListener('load', init);
 
 /* Slider for index.html */
-function init() {
+function init2() {
   var slideIndex = 1;
   showImage(slideIndex);
   
@@ -102,12 +102,12 @@ function init() {
     x[slideIndex-1].style.display = "block";
   }
 }
-window.addEventListener('load', init);
+window.addEventListener('load', init2);
 
 /*
 The code below displays collapsible content panels for presenting information in a limited amount of space.
 */
-function init2() {
+function init3() {
   var acc = document.getElementsByClassName("accordion");
   var i;
 
@@ -123,6 +123,6 @@ function init2() {
     });
   }
 }
-window.addEventListener('load', init2);
+window.addEventListener('load', init3);
 
 
