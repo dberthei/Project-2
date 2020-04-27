@@ -82,6 +82,28 @@ function init() {
 }
 window.addEventListener('load', init);
 
+/* Slider for index.html */
+function init() {
+  var slideIndex = 1;
+  showImage(slideIndex);
+  
+  function plusImage(n) {
+    showImage(slideIndex += n);
+  }
+  
+  function showImage(n) {
+    var i;
+    var x = document.getElementsByClassName("slider_image");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+}
+window.addEventListener('load', init);
+
 /*
 The code below displays collapsible content panels for presenting information in a limited amount of space.
 */
@@ -102,4 +124,5 @@ function init2() {
   }
 }
 window.addEventListener('load', init2);
+
 
