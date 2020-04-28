@@ -31,12 +31,12 @@ body {
 
 .header_image {
   float: left;
-  margin-left: 30%;
+  margin: auto;
 }
 
 .title {
   float: left;
-  margin: 0;
+  margin: auto;
   color: #EFEEEA; /*Parnip*/
   /*color: #EDEBD9;*/
   font-family: 'DM Serif Display', 'Times New Roman', serif;
