@@ -15,58 +15,37 @@ body {
   margin: auto;
 }
 
+/* Header specific rules */
 #header {
   background-color: #007C89; /*Kale*/
-  font-family: 'DM Serif Display', serif;
+  font-family: 'DM Serif Display', 'Times New Roman', serif;
 }
 
-#footer {
+.image_and_title {
+  /* position: sticky; */
+  float: left;
   width: 100%;
-  height: 2.5rem;
-}
-
-#footer div h2 ul li p {
-  background-color: #241C15; /*Peppercorn*/
-  color: #EFEEEA; /*Parnip*/
-  /*background-color: #1C1F4C;*/
+  /* height: min-content; */
   text-align: center;
 }
 
-#container_social_links {
-  background-color: #241C15; /*Peppercorn*/
-  color: #EFEEEA; /*Parnip*/
-  text-align: center;
+.header_image {
+  float: left;
+  margin-left: 30%;
 }
 
-p#container_social_links {
-  text-align: center;
-}
-
-.social_links {
-  list-style: none;
-}
-
-.link_item {
-  display: inline-block;
-}
-
-/*restyling hyperlink*/
-.hyperlink_item {
-  color: #EFEEEA; /*Parnip*/
-  white-space: nowrap;
-  text-decoration: underline;
-}
-
-#hero { 
+.title {
+  float: left;
   margin: 0;
   color: #EFEEEA; /*Parnip*/
   /*color: #EDEBD9;*/
-  font-family: 'DM Serif Display', serif;
+  /* font-family: 'DM Serif Display', 'Times New Roman', serif; */
   font-style: italic;
   font-weight: normal;
   text-align: center;
 }
 
+/* Navigation bar rules */
 #main-navbar {
   overflow: hidden;
 }
@@ -107,6 +86,43 @@ p#container_social_links {
 }
 
 #main-navbar #onpage {
+  text-decoration: underline;
+}
+
+#footer {
+  width: 100%;
+  height: 2.5rem;
+}
+
+#footer div h2 ul li p {
+  background-color: #241C15; /*Peppercorn*/
+  color: #EFEEEA; /*Parnip*/
+  /*background-color: #1C1F4C;*/
+  text-align: center;
+}
+
+#container_social_links {
+  background-color: #241C15; /*Peppercorn*/
+  color: #EFEEEA; /*Parnip*/
+  text-align: center;
+}
+
+p#container_social_links {
+  text-align: center;
+}
+
+.social_links {
+  list-style: none;
+}
+
+.link_item {
+  display: inline-block;
+}
+
+/*restyling hyperlink*/
+.hyperlink_item {
+  color: #EFEEEA; /*Parnip*/
+  white-space: nowrap;
   text-decoration: underline;
 }
 
