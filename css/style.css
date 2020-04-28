@@ -1,9 +1,14 @@
+html {
+  font-size: 16px;
+}
+
 body {
   width: 100%;
   margin: 0 auto;
-  background-color: #EFEEEA;
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 16px;
+  background-color: #EFEEEA; /*Parnip*/
+  /*background-color: #F6F6F4; /*Jasmine*/
+  /*background-color: #EDEBD9;*/
+  font-family: 'Montserrat', sans-serif;
 }
 
 #header, #nav, #footer {
@@ -57,7 +62,6 @@ p#container_social_links {
   color: #EFEEEA; /*Parnip*/
   /*color: #EDEBD9;*/
   font-family: 'DM Serif Display', serif;
-  font-size: 60px;
   font-style: italic;
   font-weight: normal;
   text-align: center;
@@ -142,8 +146,42 @@ h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
 }
 
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 .main_content p {
   text-align: left;
+}
+
+.gallery_container {
+  display: flex;
+}
+
+.image_gallery {
+  flex: 1;
+  margin: 5px;
+}
+
+.gallery_image {
+  width: 100%;
+  boder-radius: 50%
 }
 
 #map_wrap {
