@@ -107,7 +107,7 @@ window.addEventListener('load', init);
 The code below displays collapsible content panels for presenting information in a limited amount of space.
 */
 function init() {
-  var acc = document.getElementsByClassName("accordion");
+  /* var acc = document.getElementsByClassName("accordion");
   var i;
 
   for (i = 0; i < acc.length; i++) {
@@ -120,7 +120,40 @@ function init() {
         panel.style.maxHeight + "px";
       }
     });
+  } */
+ 
+ var cur = null;
+ var acc = document.getElementsByClassName("accordion");
+ var i;
+ 
+ for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+   // Only close already open panel
+   if (cur == this) {
+    toggleItem(cur);
+    cur = null;
+    return;
+   }
+   
+   // Close current panel, and open this panel
+   if (cur) {
+    toggleItem(cur);
+   }
+   
+   toggleItem(this);
+   cur = this;
   }
+ }
+ 
+ function toggleItem(item) {
+  item.classList.toggle("active");
+  var panel = item.nextElementSibling;
+  if (panel.style.maxHeight) {
+   panel.style.maxHeight = null;
+  } else {
+   panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+ }
 }
 window.addEventListener('load', init);
 
