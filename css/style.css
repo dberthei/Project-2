@@ -17,7 +17,6 @@ body {
 
 #header {
   background-color: #007C89; /*Kale*/
-  /*background-color: #00848C;*/
   font-family: 'DM Serif Display', serif;
 }
 
@@ -254,9 +253,9 @@ label {
   color: #000000;
 }
 
-input {
+input { 
   display: block;
-	width: 100%;
+  width: 100%;
   padding: 12px 20px;
   margin: 10px auto;
   border: 1px solid #ccc;
@@ -264,15 +263,33 @@ input {
   box-sizing: border-box;
 }
 
+.button .previous .next {
+  width: 100%;
+  padding: 12px 20px;
+  margin: auto;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/*input {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}*/
+
 #submit {
-  width: 20%;
+  width: 40%;
   padding: 12px 20px;
   margin: 10px auto;
   border-radius: 6px;
   box-sizing: border-box;
 }
 
-/*a {
+a {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
@@ -281,7 +298,7 @@ input {
 a:hover {
   background-color: #ddd;
   color: black;
-}*/
+}
 
 #next {
   width: 7%;
@@ -320,10 +337,10 @@ a:hover {
 
 .txtb label {
   display: block;
-  text-align: left;
+  text-align:center;
   color: #333;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .txtb input,.txtb textarea{
@@ -350,16 +367,15 @@ a:hover {
   input {
     width: 20%
   }
-}
-
-#button {
-  width: 80%;
-}
-
-@media screen and (min-width: 480px) {
-  label{
+  
+  #submit {
+    width: 30%;
+  }
+    
+  .txtb label{
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 12px;
   }
 }
+
 
