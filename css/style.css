@@ -334,7 +334,7 @@ a:hover {
 
 .txtb {
   border: 1px solid gray;
-  margin: 6px 0;
+  margin: 5px 0;
   padding: 12px 16px;
   border-radius: 6px;
 }
@@ -358,13 +358,13 @@ a:hover {
 
 #message{
   height: 100px;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .btn{
   display: inline-block;
   background: #007C89;
-  padding: 12px 0;
+  padding: 10px 0;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
