@@ -226,6 +226,10 @@ p {
 CSS rules for a slideshow with symbols. Source w3schools.com 
 */
 
+* {
+  box-sizing: border-box;
+}
+
 .slide_container {
   display: none;
 }
