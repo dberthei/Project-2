@@ -36,33 +36,44 @@
           <p>Lima, Peru</p>
           <p>July 10-15, 2018</p>
         </div>
-        <div class="slider_container">
-          <figure class="image_container">
-            <img class="slider_image" src="images/peru_lima_768px.jpg" alt="Coastline of Lima, Peru"/>
-            <figcaption>Coastline of Lima, Peru</figcaption>
+        <div class="slideshow_container">
+          <figure class="slide_container fade">
+            <img class="slide_image" src="images/peru_lima_768px.jpg" alt="Coastline of Lima, Peru"/>
+            <figcaption class="slide_caption">Coastline of Lima, Peru</figcaption>
           </figure>
-          <figure class="image_container">
-            <img class="slider_image" src="images/peru_lima_plaza_san_martin_768px.jpg" alt="Plaza San Martín in Lima, Peru"/>
-            <figcaption>Plaza San Martín in Lima, Peru</figcaption>
+          <figure class="slide_container fade">
+            <img class="slide_image" src="images/peru_lima_plaza_san_martin_768px.jpg" alt="Plaza San Martín in Lima, Peru"/>
+            <figcaption class="slide_caption">Plaza San Martín in Lima, Peru</figcaption>
           </figure>
-          <figure class="image_container">
-            <img class="slider_image" src="images/peru_pucp_768px.jpg" alt="Pontifical Catholic University of Peru (PUCP)"/>
-            <figcaption>Pontifical Catholic University of Peru (PUCP)</figcaption>
+          <figure class="slide_container fade">
+            <img class="slide_image" src="images/peru_pucp_768px.jpg" alt="Pontifical Catholic University of Peru (PUCP)"/>
+            <figcaption class="slide_caption">Pontifical Catholic University of Peru (PUCP)</figcaption>
           </figure>
-          <figure class="image_container">
-            <img class="slider_image" src="images/peru_pucp_science_bldg_768px.jpg" alt="PUCP Science, Engineering and Architecture Library"/>
-            <figcaption>PUCP Science, Engineering and Architecture Library</figcaption>
+          <figure class="slide_container fade">
+            <img class="slide_image" src="images/peru_pucp_science_bldg_768px.jpg" alt="PUCP Science, Engineering and Architecture Library"/>
+            <figcaption class="slide_caption">PUCP Science, Engineering and Architecture Library</figcaption>
           </figure>
-          <figure class="image_container">
+          <figure class="slide_container fade">
             <img class="slider_image" src="images/peru_ayacucho_indigenous_768px.jpg" alt="Ayacucho indigenous"/>
-            <figcaption>Ayacucho indigenous woman playing a flute</figcaption>
+            <figcaption class="slide_caption">Ayacucho indigenous woman playing a flute</figcaption>
           </figure>
-           <figure class="image_container">
+           <figure class="slide_container fade">
             <img class="slider_image" src="images/peru_folk_dance_768px.jpg" alt="Traditional dance, Peru"/>
-            <figcaption>Traditional dance, Peru</figcaption>
+            <figcaption class="slide_caption">Traditional dance, Peru</figcaption>
           </figure>
-          <button class="slider_button display_left" onclick="plusImage(-1)">&#10094;</button>
-          <button class="slider_button display-right" onclick="plusImage(1)">&#10095;</button>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+          <!-- <button class="slider_button display_left" onclick="plusImage(-1)">&#10094;</button>
+          <button class="slider_button display-right" onclick="plusImage(1)">&#10095;</button> -->
         </div>
         <div>
           <p>The hosting institution was the Pontifical Catholic University of Peru (Pontificia Universidad Católica del Perú, PUCP).</p>
