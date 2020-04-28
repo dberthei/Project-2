@@ -193,6 +193,7 @@ h1, h2, h3, h4 {
 #container {
   text-align: center;
   margin: auto;
+  background:#a8d6bd;
 }
 
 #container_billing {
@@ -274,7 +275,7 @@ a:hover {
 .contact-form {
   width: 50%;
   max-width: 400px;
-  background: #FDFEFE;
+  background: #a8d6bd;
   position: relative;
   margin: auto;
   padding: 20px 30px;
