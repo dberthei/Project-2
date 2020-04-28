@@ -122,7 +122,7 @@ p#container_social_links {
   color: #5a251f;
 }
 
-figure {
+/* figure {
   display: block;
   margin: 0px auto;
 }
@@ -140,7 +140,7 @@ figure figcaption {
   margin: 0px auto;
   text-align: center;
   padding: 5px 0;
-}
+} */
 
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
