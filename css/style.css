@@ -1,11 +1,14 @@
+html {
+  font-size: 16px;
+}
+
 body {
   width: 100%;
   margin: 0 auto;
   background-color: #EFEEEA; /*Parnip*/
   /*background-color: #F6F6F4; /*Jasmine*/
   /*background-color: #EDEBD9;*/
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #header, #nav, #footer {
