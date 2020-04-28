@@ -149,6 +149,20 @@ h1, h2, h3, h4 {
   text-align: left;
 }
 
+.gallery_container {
+  display: flex;
+}
+
+.image_gallery {
+  flex: 1;
+  margin: 5px;
+}
+
+.gallery_image {
+  width: 100%;
+  boder-radius: 50%
+}
+
 #map_wrap {
   width: 90%;
   height: 75%;
