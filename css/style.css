@@ -39,7 +39,7 @@ body {
   margin: 0;
   color: #EFEEEA; /*Parnip*/
   /*color: #EDEBD9;*/
-  /* font-family: 'DM Serif Display', 'Times New Roman', serif; */
+  font-family: 'DM Serif Display', 'Times New Roman', serif;
   font-style: italic;
   font-weight: normal;
   text-align: center;
@@ -241,10 +241,6 @@ p {
 /* 
 CSS rules for a slideshow with symbols. Source w3schools.com 
 */
-
-* {
-  box-sizing: border-box;
-}
 
 .slide_container {
   display: none;
