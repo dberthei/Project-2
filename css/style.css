@@ -356,6 +356,11 @@ a:hover {
   margin-top: 6px;
 }
 
+#message{
+  height: 100px;
+  font-size: 14px;
+}
+
 .btn{
   display: inline-block;
   background: #007C89;
