@@ -1,8 +1,8 @@
-/*
-The code below warns the users if they forget to fill in the informaton
-*/
 
 function init() {
+  /* 
+  The code below warns the users if they forget to fill in the informaton
+  */
   var button = document.getElementById('submit');
   
   function Alert() {
@@ -79,11 +79,8 @@ function init() {
     }
   }
   button.addEventListener('click', Alert);
-}
-window.addEventListener('load', init);
-
-/* Slider for index.html */
-function init2() {
+  
+  /* Slider for index.html */
   var slideIndex = 1;
   showImage(slideIndex);
   
@@ -101,13 +98,10 @@ function init2() {
     }
     x[slideIndex-1].style.display = "block";
   }
-}
-window.addEventListener('load', init2);
-
-/*
-The code below displays collapsible content panels for presenting information in a limited amount of space.
-*/
-function init3() {
+  
+  /*
+  The code below displays collapsible content panels for presenting information in a limited amount of space.
+  */
   var acc = document.getElementsByClassName("accordion");
   var i;
 
@@ -123,6 +117,6 @@ function init3() {
     });
   }
 }
-window.addEventListener('load', init3);
+window.addEventListener('load', init);
 
 
