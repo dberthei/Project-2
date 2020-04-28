@@ -223,8 +223,17 @@ p {
 }
 
 /* 
-CSS rules for a slideshow with symbols. Source w3schools.com
+CSS rules for a slideshow with symbols. Source w3schools.com 
 */
+
+.slide_container {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
 .slideshow-container {
   max-width: 100%;
   position: relative;
