@@ -131,7 +131,8 @@ figure img {
   vertical-align: top;
   display: block;
   margin: 0px auto;
-
+  max-width: 100%;
+  height: auto;
 }
 
 figure figcaption {
