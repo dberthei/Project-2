@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" media="screen" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+  <script async src="js/scripts.js"></script>
   </head>
   <body>
     <header id="header">
@@ -26,23 +27,24 @@
         </div>
       </nav>
     </header>
-    <div class="contact-form">
       <h3>Contact Us</h3>
+      <div id = "error_message"></div>
+      <form id="myform" onsubmit="return validation()">
         <div class="txtb">
           <label>Full Name: </label>
-          <input type="text"  placeholder="Enter Your Name">
+          <input type="text"  placeholder="Enter Your Name" id="name">
         </div>
         <div class="txtb">
           <label>Email: </label>
-          <input type="Email"  placeholder="Enter Your Email">
+          <input type="Email"  placeholder="Enter Your Email" id="email">
         </div>
         <div class="txtb">
           <label>Phone Number: </label>
-          <input type="text" placeholder="Enter Your Phone Number">
+          <input type="text" placeholder="Enter Your Phone Number" id="phone">
         </div>
         <div class="txtb">
           <label>Message: </label>
-          <textarea></textarea>
+          <textarea id="message" placeholder="Message"></textarea>
         </div>
         <a class="btn">Send</a>
       </div>
