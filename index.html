@@ -64,25 +64,6 @@
           <button class="slider_button display_left" onclick="plusImage(-1)">&#10094;</button>
           <button class="slider_button display-right" onclick="plusImage(1)">&#10095;</button>
         </div>
-        <script>
-          var slideIndex = 1;
-          showImage(slideIndex);
-          
-          function plusImage(n) {
-            showImage(slideIndex += n);
-          }
-         
-          function showImage(n) {
-            var i;
-            var x = document.getElementsByClassName("slider_image");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-          }
-        </script>
         <div>
           <p>The hosting institution was the Pontifical Catholic University of Peru (Pontificia Universidad Católica del Perú, PUCP).</p>
           <p>The goal of this World Congress is to promote dialogue concerning various crucial philosophical issues in today’s world 
