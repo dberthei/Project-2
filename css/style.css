@@ -200,11 +200,11 @@ p {
 }
 
 /* CSS rules for accordion with symbols */
-.accordion {
+button.accordion {
   background-color: #00848C;
   background-image: linear-gradient(#009ca6, #00848C, #009ca6);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6);
-  color: #FFFFFF;
+  color: #FFFFFF; /* Change me! */
   /*border-radius: 3em;*/
   /*border: 3px solid black;*/
   cursor: pointer;
@@ -217,11 +217,11 @@ p {
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+button.accordion.active, button.accordion:hover {
   background-color: #003C40; 
 }
 
-.accordion:after {
+button.accordion:after {
   content: '\002B'; /* Unicode character plus sign */
   color: #003C40; /* #00B4BF ligther alternative */
   font-weight: bold;
@@ -229,16 +229,16 @@ p {
   margin-left: 5px;
 }
 
-.active:after {
+button.accordion.active:after {
   content: '\2212'; /* Unicode character minus sign */
 }
 
-.panel {
+div.panel {
   padding: 0 18px;
   background-color: #A8D6BD;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height .2s ease-out;
 }
 
 /*CSS rules for signup and payment pages*/
