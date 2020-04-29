@@ -5,7 +5,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   font-size: 1em;
   line-height: 1.5;
   background-color: #EFEEEA; /*Parnip*/
@@ -14,17 +13,9 @@ html, body {
 
 .main-header {
   background-color: #007C89; /*Kale*/
+  color: #EFEEEA; /*Parnip*/
   font-family: 'DM Serif Display', 'Times New Roman', serif;
   box-shadow: 0 1px 6px rgba(0,0,0,.1);
-}
-
-.main-navbar a {
-  font-size: 0.75em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #EFEEEA; /*Parnip*/
-  text-decoration: none;
 }
 
 .main-navbar ul {
@@ -32,11 +23,27 @@ html, body {
   padding: 0;
 }
 
-/**
-* Flex & layout things:
-* — Mobile first
-* — Responsive
-*/
+.main-navbar a {
+  color: #EFEEEA; /*Parnip*/
+  font-family: 'Playfair Display', serif;
+  font-size: 0.75em;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+.main-navbar ul li a:hover {
+  background-color: #66b0b8;
+}
+
+.main-navbar #onpage {
+  padding: .75em;
+  background-color: #66b0b8;
+  text-decoration: underline;
+}
+
+/* Flex layout: (mobile first, responsive) */
 img {
   max-width: 100%;
   height: auto;
@@ -55,12 +62,28 @@ img {
   flex-wrap: wrap;
 }
 
+#header_image {
+  flex-shrink: 0;
+}
+
+#header_title h1 {
+  flex-grow: 1;
+  padding-left: .5em;
+  color: #EFEEEA; /*Parnip*/
+  font-family: 'DM Serif Display', 'Times New Roman', serif;
+  font-weight: normal;
+  text-align: center;
+}
+
 .main-navbar {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   background-color: #007C89; /*Kale*/
-  font-family: 'DM Serif Display', 'Times New Roman', serif;
+  background-image: linear-gradient(#0093A3, #007C89, #0093A3);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6);
+  color: #EFEEEA; /*Parnip*/
+  font-family: 'Playfair Display', serif;
 }
 
 .main-nav-list {
@@ -86,82 +109,6 @@ img {
   .main-header .header_container  {
     justify-content: space-between;
   }
-}
-
-/*body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  min-height: 100vh;
-  background-color: #EFEEEA;
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}*/
-
-/* Header specific rules */
-#header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 1em;
-  width: 100%;
-  background-color: #007C89; /*Kale*/
-  font-family: 'DM Serif Display', 'Times New Roman', serif;
-}
-
-#header_image {
-  flex-shrink: 0;
-}
-
-#header_title h1 {
-  flex-grow: 1;
-  padding-left: .5em;
-  color: #EFEEEA; /*Parnip*/
-  font-family: 'DM Serif Display', 'Times New Roman', serif;
-  font-weight: normal;
-  text-align: center;
-}
-
-/* Navigation bar rules */
-#main-navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #007C89; /* Kale */
-  background-image: linear-gradient(#0093A3, #007C89, #0093A3);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6);
-  color: #EFEEEA; /*Parnip*/
-  font-family: 'Playfair Display', serif;
-  padding: .75em;
-}
-
-#main-navbar ul {
-  display: flex;
-  list-style-type: none; 
-}
-
-#main-navbar li {
-}
-
-#main-navbar a {
-  color: inherit;
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-#main-navbar ul li a:hover {
-  background-color: #66b0b8;
-}
-
-#main-navbar #onpage {
-  padding: .75em;
-  background-color: #66b0b8;
-  text-decoration: underline;
 }
 
 main {
@@ -337,9 +284,7 @@ p {
   width: 100%;
 }
 
-/* 
-CSS rules for a slideshow with symbols. Source w3schools.com 
-*/
+/* CSS rules for a slideshow with symbols. Source w3schools.com */
 
 .slide_container {
   display: none;
