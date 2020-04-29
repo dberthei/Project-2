@@ -24,7 +24,7 @@ body {
   font-family: 'DM Serif Display', 'Times New Roman', serif;
 }
 
-#header_imgage {
+#header_image {
   flex-shrink: 0;
 }
 
@@ -48,22 +48,18 @@ body {
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6);
   color: #EFEEEA; /*Parnip*/
   font-family: 'Playfair Display', serif;
-  padding: .5em;
+  padding: .75em;
 }
 
 #main-navbar ul {
   display: flex;
   list-style-type: none; 
-  padding-left: .5em;
 }
 
 #main-navbar li {
-  padding-right: 1em 2.5em;
-  
 }
 
 #main-navbar a {
-  padding: .75em;
   color: inherit;
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
@@ -129,22 +125,23 @@ p#container_social_links {
 }
 
 /*restyling hyperlink*/
-.hyperlink_item {
+.hyperlink_item1 {
+  color: #241C15; /*Peppercorn*/
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+.hyperlink_item2 {
   color: #EFEEEA; /*Parnip*/
   white-space: nowrap;
   text-decoration: underline;
 }
 
-#content {
-  overflow: auto;
-  height: 100%;
-}
-
 #feature {
-  background-color: #A8D6BD;
   padding: 20px;
   margin: 0 10px;
-  color: #5a251f;
+  background-color: #A8D6BD;
+  color: #241C15; /*Peppercorn*/
 }
 
 /* figure {
