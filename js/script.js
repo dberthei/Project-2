@@ -82,34 +82,25 @@ function init() {
 window.addEventListener('load', init);
 
 /*
-Slider for index.html
+Slideshow for index.html
 */
 function init() {
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+ var slideIndex = 1;
+  showImage(slideIndex);
+
+  function plusImage(n) {
+    showImage(slideIndex += n);
   }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
+
+  function showImage(n) {
     var i;
-    var slides = document.getElementsByClassName("slide_container");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    var x = document.getElementsByClassName("slider_image");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    x[slideIndex-1].style.display = "block";
   }
 }
 window.addEventListener('load', init);
