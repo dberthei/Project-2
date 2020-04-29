@@ -34,12 +34,10 @@ html, body {
 }
 
 .main-navbar ul li a:hover {
-  padding: .75em;
   background-color: #66b0b8;
 }
 
 .main-navbar #onpage {
-  padding: .75em;
   background-color: #66b0b8;
   text-decoration: underline;
 }
