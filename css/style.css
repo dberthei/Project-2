@@ -242,7 +242,7 @@ p {
 
 .gallery_image {
   width: 100%;
-  boder-radius: 50%
+  border-radius: 50%
 }
 
 /* Responsive iframe */
@@ -330,11 +330,13 @@ div.panel {
 #container {
   text-align: center;
   margin: auto;
+  background:#a8d6bd;
 }
 
 #container_billing {
   text-align: center;
   margin: 25px auto;
+  background:#a8d6bd;
 }
 
 legend {
@@ -376,6 +378,8 @@ input {
   margin: 10px auto;
   border-radius: 6px;
   box-sizing: border-box;
+  background-color: #007C89;
+  color: white;
 }
 
 .button a {
@@ -401,7 +405,7 @@ input {
 .contact-form {
   width: 50%;
   max-width: 400px;
-  background: #FDFEFE;
+  background:#a8d6bd;
   position: relative;
   margin: auto;
   padding: 20px 30px;
@@ -419,7 +423,7 @@ input {
 
 .txtb {
   border: 1px solid #808080; /* gray */
-  margin: 6px 0;
+  margin: 5px 0;
   padding: 12px 16px;
   border-radius: 6px;
 }
@@ -441,10 +445,15 @@ input {
   margin-top: 6px;
 }
 
+#message{
+  height: 100px;
+  font-size: 10px;
+}
+
 .btn{
   display: inline-block;
   background: #007C89;
-  padding: 12px 0;
+  padding: 10px 0;
   color: #FFFFFF; /* white */
   text-transform: uppercase;
   cursor: pointer;
