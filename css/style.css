@@ -19,7 +19,7 @@ body {
 #header {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 1em;
   width: 100%;
   background-color: #007C89; /*Kale*/
