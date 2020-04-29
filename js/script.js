@@ -1,7 +1,6 @@
-/*
-The code below warns the users if they forget to fill in the informaton
+/* 
+ The code below warns the users if they forget to fill in the informaton
 */
-
 function init() {
   var button = document.getElementById('submit');
   
@@ -82,47 +81,63 @@ function init() {
 }
 window.addEventListener('load', init);
 
-/* Slider for index.html */
-function init2() {
-  var slideIndex = 1;
-  showImage(slideIndex);
-  
-  function plusImage(n) {
-    showImage(slideIndex += n);
+/*
+Slideshow for index.html
+*/
+function init() {
+ var slideIndex = 1;
+ showImage(slideIndex);
+ 
+ function plusImage(n) {
+  showImage(slideIndex += n);
+ }
+ 
+ function showImage(n) {
+  var i;
+  var x = document.getElementsByClassName("slide_image");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
   }
-  
-  function showImage(n) {
-    var i;
-    var x = document.getElementsByClassName("image_container");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-  }
+  x[slideIndex-1].style.display = "block";
+ }
 }
-window.addEventListener('load', init2);
+window.addEventListener('load', init);
 
 /*
 The code below displays collapsible content panels for presenting information in a limited amount of space.
 */
-function init3() {
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
+function init() {
+ var cur = null;
+ var acc = document.getElementsByClassName("accordion");
+ var i;
+ 
+ for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+   // Only close already open panel
+   if (cur == this) {
+    toggleItem(cur);
+    cur = null;
+    return;
+   }
+   // Close current panel, and open this panel
+   if (cur) {
+    toggleItem(cur);
+   }
+   toggleItem(this);
+   cur = this;
   }
+ }
+ 
+ function toggleItem(item) {
+  item.classList.toggle("active");
+  var panel = item.nextElementSibling;
+  if (panel.style.maxHeight) {
+   panel.style.maxHeight = null;
+  } else {
+   panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+ }
 }
-window.addEventListener('load', init3);
-
-
+window.addEventListener('load', init);

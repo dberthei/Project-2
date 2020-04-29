@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0; width=device-width">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- <script src="js/map.js" type="text/javascript"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA77g_yn1m1Od_5DX-M35wVkNMHE4nXUYI&callback=init" type="text/javascript"></script> -->
@@ -10,27 +11,28 @@
   </head>
   <body>
     <!-- HEADER SECTION -->
-    <header id="header">
-      <div class="header">
-        <img src="images/isud_logo_style_4.png" alt="ISUD logo"/>
-        <h1 id="hero">The International Society for Universal Dialogue</h1>
+    <header class="main-header">
+      <div class="header_container">
+        <a class="header_logo" href="https://itmd362-spring2020-project-2.github.io/Project-2/index.html" title="ISUD Home Page">
+          <img id="header_image" src="images/isud_logo_style_4.png" alt="ISUD logo"/>
+        </a>
+        <h1 id="header_title">The International Society for Universal Dialogue</h1>
       </div>
-      <nav id="main-navbar">
-        <div id="navbar-container">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li id="onpage"><a href="events.html">Events</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
     </header>
+    <!-- NAVIGATION SECTION -->
+    <nav class="main-navbar">
+      <ul class="main-nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li id="onpage"><a href="aboutus.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
     <!-- MAIN SECTION -->
     <main id="content">
-      <article id="feature">
-        <div>
+      <article>
+        <section id="feature">
           <h2>PAST EVENTS (Starting from the most recent)</h2>
           <p>2018 - 12th World Congress in Lima, Peru Theme: Philosophy in an Age of Crisis: Challenges and Prospects</p>
           <p>2016 - 11th World Congress in Warsaw, Poland Theme: Values and Ideals: Theory and Praxis</p>
@@ -49,11 +51,17 @@
           <p>1991 - 3rd International Symposium in St. Catherine’s, Canada (ISU)</p>
           <p>1990 - 2nd International Symposium in Berlin, Germany (ISU)</p>
           <p>1989 - 1st International Symposium in Warsaw, Poland (ISU)</p>
-        </div>
+        </section>
+        <!-- <div id="map_wrap"> -->
+        <section id="map"></section>
+        <!-- </div>-->
       </article>
-      <!-- <div id="map_wrap"> -->
-      <div id="map"></div>
-      <!-- </div>-->
+      <aside id="feature">
+        <h2>Quote</h2>
+        <p>Change happens by listening and then starting a dialogue with the people who are doing something you don't believe is 
+          right.</p> 
+        <p>Jane Goodall</p>
+      </aside>
       <script>
         // Initialize and add the map
         function initMap() {
