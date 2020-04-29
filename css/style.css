@@ -138,8 +138,8 @@ p#container_social_links {
 }
 
 #feature {
-  padding: 20px;
-  margin: 0 10px;
+  margin: 0;
+  padding: 25px 50px 25px 50px;
   background-color: #A8D6BD;
   color: #241C15; /*Peppercorn*/
 }
