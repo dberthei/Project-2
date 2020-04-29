@@ -100,8 +100,6 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   padding 1em 0;
   background-color: #241C15; /*Peppercorn*/
