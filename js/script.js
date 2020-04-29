@@ -86,22 +86,22 @@ Slideshow for index.html
 */
 function init() {
  var slideIndex = 1;
-  showImage(slideIndex);
-
-  function plusImage(n) {
-    showImage(slideIndex += n);
+ showImage(slideIndex);
+ 
+ function plusImage(n) {
+  showImage(slideIndex += n);
+ }
+ 
+ function showImage(n) {
+  var i;
+  var x = document.getElementsByClassName("slide_container");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
   }
-
-  function showImage(n) {
-    var i;
-    var x = document.getElementsByClassName("slide_container");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-  }
+  x[slideIndex-1].style.display = "block";
+ }
 }
 window.addEventListener('load', init);
 
