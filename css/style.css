@@ -402,63 +402,73 @@ input {
 
 /*CSS rules for contact page and form*/
 
-.contact-form {
-  width: 50%;
-  max-width: 400px;
-  background:#a8d6bd;
-  position: relative;
-  margin: auto;
-  padding: 20px 30px;
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 0 10px #000000b3; 
-  font-family: "Montserrat", sans-serif;
-}
-
-.contact-form h1 {
-  margin-top: 0;
-  font-weight: 200;
-}
-
-.txtb {
-  border: 1px solid #808080; /* gray */
-  margin: 5px 0;
-  padding: 12px 16px;
-  border-radius: 6px;
-}
-
-.txtb label {
-  display: block;
-  text-align:center;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 10px;
-}
-
-.txtb input,.txtb textarea{
-  width: 100%;
-  border: none;
-  background: #EDEBD9;
   outline: none;
-  font-size: 10px;
-  margin-top: 6px;
 }
 
-#message{
-  height: 100px;
-  font-size: 10px;
-}
-
-.btn{
-  display: inline-block;
-  background: #007C89;
-  padding: 10px 0;
-  color: #FFFFFF; /* white */
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 6px;
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
   width: 100%;
+  background: #a8d6bd;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000000b3; 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+  background:#EDEBD9;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background:  #007C89;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
 }
 
 @media (min-width: 768px) {
