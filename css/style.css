@@ -450,7 +450,7 @@ input {
   font-size: 10px;
 }
 
-.btn input{
+.btn{
   display: inline-block;
   background: #007C89;
   padding: 10px 0;
