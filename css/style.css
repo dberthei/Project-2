@@ -410,24 +410,22 @@ input {
 }
 
 .wrapper{
+  width: 50%;
+  max-width: 400px;
+  background:#a8d6bd;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  max-width: 350px;
-  width: 100%;
-  background: #a8d6bd;
-  padding: 25px;
-  border-radius: 5px;
+  margin: auto;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
   box-shadow: 0 0 10px #000000b3; 
+  font-family: "Montserrat", sans-serif;
 }
 
 .wrapper h2{
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #332902;
+  margin-top: 0;
+  font-weight: 200
 }
 
 .wrapper .input_field{
@@ -436,10 +434,12 @@ input {
 
 .wrapper .input_field input[type="text"],
 .wrapper textarea{
-  border: 1px solid #e0e0e0;
-  width: 100%;
-  padding: 10px;
-  background:#EDEBD9;
+ width: 100%;
+  border: none;
+  background: #EDEBD9;
+  outline: none;
+  font-size: 10px;
+  margin-top: 6px;
 }
 
 .wrapper textarea{
